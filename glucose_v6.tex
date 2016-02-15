@@ -133,20 +133,20 @@ governed by a competition of surface tension and gravity
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.99\textwidth]{figures/experimental_apparatus.eps}
-\caption{Schematic side-view diagram of the experimental apparatus.}
+\caption{Schematic diagram of the experimental apparatus.
+{\bf *** what's the arrow just to the right of syrinx holder for? ***}}
 \label{fig:experimental_apparatus}
 \end{figure}
 
-A schematic diagram of the side-view of the experimental apparatus is
+A schematic diagram of the experimental apparatus is
 shown in figure \ref{fig:experimental_apparatus}.  The substrate was
 supported on a Perspex base plate, which was adjustably mounted on
 three vertical, threaded poles using nuts, thus allowing accurate
 levelling to {\bf $\pm ?^\circ$ (give accuracy, what is the pitch of
   the threads?)}. {\bf Also, change removable platform to removable
-  substrate in the figure.} The setup was designed to enable the easy
-removal of the substrate, which was secured to the base plate with
-three finger-tight nylon screws. The substrate was a Perspex plate of
-dimensions {\bf $? \times ? \times ?$} {\bf( milled?, how flat?)}. A
+  substrate in the figure.} The substrate (a Perspex plate of
+dimensions {\bf $? \times ? \times ?$} {\bf( milled?, how flat?)})
+was secured to the base plate with three finger-tight nylon screws. A
 featureless, flat substrate was used for the dry spreading
 experiments, whereas for spreading on a viscous layer, a centred,
 circular trough with a diameter of 60.5 mm and depth of 2 {\bf $\pm
@@ -156,17 +156,16 @@ to 8 {\bf $\pm ?$} mm to facilitate the manual deposition of the high
 viscosity liquid. To ensure reproducible deposition of the
 fluid, we placed the syringe inside a tightly-fitting removable
 holder which was mounted on the three vertical, threaded poles, 
-allowing its level to be adjusted in a similar way to the base plate.  
-Side-view images of the backlit drop were captured with a wall-mounted 
-CCD camera (Pulnix TM-6740CL, 640x480 pixels). The
+allowing its level to be adjusted in a similar way to the base plate. The
 accurate levelling of both base plate and syringe holder was essential
-to ensure axisymmetric spreading. The working part of the experimental setup was
-enclosed in a temperature-controlled Perspex cabinet within which the 
+to ensure axisymmetric spreading. The working part of the experimental 
+setup was enclosed in a temperature-controlled Perspex cabinet within which the 
 temperature was held at $\degCpm{20.3}{0.2}$.
-
 {\bf (You used was a 100W incandescent bulb, and halogen will raise
   questions about heating, so I don't think you need to be too
   specific here).}
+Side-view images of the backlit drop were captured with a wall-mounted 
+CCD camera (Pulnix TM-6740CL, 640x480 pixels). 
 
 We performed the spreading experiments with glucose syrup {\bf
   (manufacturer)}, which is a transparent, highly viscous Newtonian
@@ -184,7 +183,7 @@ We measured the density of the glucose syrup at the laboratory temperature
 of $\degCpm{20.3}{0.2}$ to be $\rho=1372.8 \; \pm \; 4.9 \;
 \sym{kg}/\sym{m}^3$ by accurately weighing five samples of known
 volume between 10 and 50~ml.  The viscosity of glucose syrup depends
-exponentially on temperature \cite{llewellin2002rheology} and we
+sensitively on temperature \cite{llewellin2002rheology} and we
 therefore measured it at 20.0, 20.1, 20.3, 20.5 and $\degC{21.0}$
 using a Brookfield R/S-Plus (SST) rheometer with a concentric cylinder
 CC25 geometry and temperature control. We performed shear rate
@@ -201,7 +200,8 @@ averaged values of the dynamic viscosity $\mu$ are presented in table
 $20.0 - \degC{20.3}$, but a 7\% decrease at $\degC{21.0}$. The
 laboratory temperature was recorded for each spreading experiment, so
 that the viscosity could be inferred. {\bf ***  move this to
-  estimate of non-dimensional parameters in numerics section***}
+  estimate of non-dimensional parameters in numerics section; here it
+  seems odd and will prompt questions why we didn't measure it***}
 The surface tension of the glucose syrup was taken from the 
 literature \cite{montanez2013influence} as $\sigma=55.0 \pm 0.6$~N/m.{\bf ***}
 
@@ -223,9 +223,9 @@ literature \cite{montanez2013influence} as $\sigma=55.0 \pm 0.6$~N/m.{\bf ***}
 
 
 \subsubsection{Substrate preparation\label{sec:creating_layer}}
-When performing the experiments in which a drop is 
+When performing the experiments in which the drop is 
 deposited on a uniform layer of the same fluid, we prepared the
-substrate by slightly overfilling the trough and then scraped 
+substrate by slightly overfilling the trough and then scraping
 off the excess fluid with a 
 square-edged ruler. Since a certain amount of the (very viscous) fluid 
 adhered to the scraper this procedure resulted in an underfilled trough, 
@@ -250,8 +250,8 @@ $R_{z=h}(t)$, was smaller than the actual radius of the spreading front,
 \end{figure}
  
 \subsubsection{Image analysis\label{image}}
-We analysed the images that were aquired by the camera using \textit{OpenCV}
-\cite{bradski2008learning} within a \textit{python} environment.  In
+We analysed the images that were aquired by the camera using the \textit{OpenCV}
+software\cite{bradski2008learning} within a \textit{python} environment.  In
 order to convert the results from the image analysis into dimensional
 quantities, a calibration image of a cylindrical object of known
 dimensions was recorded prior to each experiment. This showed
@@ -281,7 +281,7 @@ results obtained from our edge detection algorithms are shown in in Fig.
 end of the nozzle, the green line the upper boundary of the 
 substrate and the red line the air-liquid interface. The blue line
 shows the nozzle centreline. The coordinates of the interface were 
-measured relative to an $(r^*,z^*)$-coordinate system that is centered at
+measured relative to an $(r^*,z^*)$-coordinate system that was centered at
 the intersection of the blue and green lines.
 
 
@@ -338,7 +338,7 @@ the intersection of the blue and green lines.
 A sequence of images showing the spreading of a drop
 of glucose syrup on a layer of the same fluid is shown in figure
 \ref{fig:glucose_spreading}. Fig. \ref{fig:glucose_spreading}(a)
-shows the initial drop configuration just after all the fluid 
+shows the initial drop configuration immediately after all the fluid 
 has been ejected from the syringe. Figs. 
 \ref{fig:glucose_spreading}(b-d) illustrate the subsequent,
 approximately axisymmetric spreading of the drop. The spreading
@@ -409,7 +409,7 @@ Beyond this time the drop deposited on the dry substrate spreads
 significantly more slowly than that deposited on the fluid layer.
 For the drop on the dry substrate, the moving contact line can be
 observed throughout the evolution since it is not obscured by the
-trough and the figure shows that the contact line motion follows
+trough. The figure shows that the contact line motion follows
 the power-law behaviour $R \sim t^{1/10}$ predicted by scaling
 arguments based on a balance between *** and *** {\bf ...and add 
 references***}, and also observed in previous experimental work by {\bf  add 
@@ -422,7 +422,7 @@ theoretical spreading law for a sessile drop spreading in three
 dimensions, driven by surface tension and opposed by dissipation at
 the contact line \cite{bonn2009wetting, cazabat1986dynamics}. 
 
-{\bf ...BUT IT MAKES NO SENSE. SURELY SPREADING ISN'T ``DRIVEN'' BY
+{\bf ...BUT THIS MAKES NO SENSE TO ME. SURELY SPREADING ISN'T ``DRIVEN'' BY
 SURFACE TENSION OR IS IT? ***}
 
 {\bf *** DON'T UNDERSTAND THIS BIT EITHER}
