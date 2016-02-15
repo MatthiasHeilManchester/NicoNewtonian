@@ -6,7 +6,7 @@ all:
 	dvipdf glucose
 
 diff:
-	latexdiff glucose_v4.tex glucose_v5.tex > diff_raw.tex
+	latexdiff glucose_v5.tex glucose_v6.tex > diff_raw.tex
 	cat diff_raw.tex | tr -d '\015' > diff.tex	
 	latex diff.tex
 	bibtex diff
